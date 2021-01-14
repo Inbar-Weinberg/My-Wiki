@@ -4,9 +4,9 @@ body{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6em;
-    background-color:#659dbd;
-    
+    color:#fbeec1;
 }
+
 
 header{
     position:fixed;
@@ -17,7 +17,6 @@ header{
     grid-template-columns: 150px auto;
     grid-auto-rows:150px;
     margin:0;
-
 }
 main{
     margin:0;
@@ -28,12 +27,13 @@ main{
     grid-template-columns: minmax(auto, 250px)  auto minmax(auto, 250px);
     grid-auto-rows:minmax(75vh, auto);
     justify-content: stretch;
+
 }
 
 #logo-pic{
-    
     height: 150px;
     width: 150px;
+    border-radius: 50%;
 }
 #nav-bar{
 }
