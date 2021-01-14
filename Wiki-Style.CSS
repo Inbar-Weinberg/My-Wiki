@@ -14,34 +14,39 @@ header{
     left:0;
     width: 100%;
     display:grid;
-    grid-template-columns: 100px 50px auto;
-    grid-auto-rows:100px;
+    grid-template-columns: 150px auto;
+    grid-auto-rows:150px;
+    margin:0;
 
 }
 main{
+    margin:0;
     width: 100%;
     position:absolute;
-    top:100px;
+    top:150px;
     display:grid;
     grid-template-columns: minmax(auto, 250px)  auto minmax(auto, 250px);
-    grid-auto-rows:minmax(90vh, auto);
+    grid-auto-rows:minmax(75vh, auto);
     justify-content: stretch;
 }
 
-#logo{
-
+#logo-pic{
+    
+    height: 150px;
+    width: 150px;
 }
 #nav-bar{
 }
 #side-bar{
 }
 #context{
-    padding: right 5%;;
+    padding-right: 5%;;
     padding-left:5%;
 }
 #footer{
     position: absolute;
     bottom:0;
     width:100%;
+
     color:black;
 }
