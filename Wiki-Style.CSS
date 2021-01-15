@@ -37,7 +37,6 @@ header{
 #links-wrapper{
     display:flex;
     flex-direction: row;
-    align-items: space;
 }
 #links-wrapper div{
     margin:auto 0;
@@ -54,7 +53,8 @@ header{
     top:150px;
     display:grid;
     grid-template-columns: minmax(auto, 200px)  auto minmax(auto, 200px);
-    grid-auto-rows: minmax(75vh, auto) auto;
+    grid-auto-rows: minmax(78vh, auto) auto;
+    grid-gap: 0 2vw ;
 }
 #quick-find{
     text-align:center;
@@ -67,18 +67,27 @@ header{
     color: black;
 }
 
-
 #context{
-    padding-right: 5%;;
-    padding-left:5%;
+
 }
 footer{
+    text-align:center;
     grid-column: 2/3;
-
-    /*
-    position: relative;
-    top:100%;
-    bottom:0;
-    width:100%;
-    color:black;*/
+    display:flex;
+    flex-wrap: wrap;
+    color:black;
+    justify-content: space-evenly;
 }
+footer>* {
+    margin-top:0;
+    margin-bottom:0;
+    flex: 1 1 100%;
+}
+footer a{
+    flex: 0 0 0;
+}
+
+footer img{
+    height:26px;
+}
+
