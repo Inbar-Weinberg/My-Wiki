@@ -37,11 +37,11 @@ header{
 #links-wrapper{
     display:flex;
     flex-direction: row;
-    align-items: center;
+    align-items: space;
 }
 #links-wrapper div{
-
-    fleX:1 1 auto;
+    margin:auto 0;
+    fleX:1 1 0;
 }
 /*
 
