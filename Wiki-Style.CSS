@@ -1,10 +1,17 @@
+*{
 
+}
 body{
+    height:100vh;
+    width:100vw;
     margin:0;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6em;
     color:#fbeec1;
+    background: rgb(141,135,65);
+    background: linear-gradient(0deg, rgba(141,135,65,0.9332107843137255) 2%, rgba(101,157,189,1) 47%);
+    background-clip:border-box;
 }
 
 
