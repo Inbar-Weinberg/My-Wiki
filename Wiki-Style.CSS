@@ -30,7 +30,20 @@ header{
     width: 150px;
     border-radius: 50%;
 }
+#nav-bar div{
+    height:50%;
+    text-align: center;
+}
+#links-wrapper{
+    display:flex;
+    flex-direction: row;
 
+}
+#links-wrapper div{
+    margin-top: auto;
+    margin-bottom: auto;
+    fleX:1 1 auto;
+}
 
 #main{
     margin:0;
