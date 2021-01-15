@@ -11,7 +11,6 @@ body{
     background: linear-gradient(0deg, rgba(141,135,65,0.9332107843137255) 2%, rgba(101,157,189,1) 47%);
     background-attachment: fixed;
 }
-
 header{
     position:fixed;
     top:0;
@@ -25,7 +24,6 @@ header{
     background: linear-gradient(180deg, rgba(141,135,65,0.9332107843137255) 2%, rgba(101,157,189,1) 47%);
     z-index: 1;
 }
-
 #logo-pic{
     height: 150px;
     width: 150px;
@@ -43,16 +41,28 @@ header{
     margin:auto 0;
     fleX:1 1 0;
 }
+#links-wrapper a{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
+    color:#fbeec1;
+    text-decoration: none;
+}
+#links-wrapper a:hover{
+    color:black;
+}
+
 #main{
     margin:0;
     width: 100%;
-    position:absolute;
+    position: absolute;;
     top:150px;
     display:grid;
     grid-template-columns: minmax(auto, 200px)  auto minmax(auto, 200px);
     grid-auto-rows: minmax(78vh, auto) auto;
     grid-gap: 0 2vw ;
 }
+
 #quick-find{
     text-align:center;
 }
@@ -62,10 +72,6 @@ header{
 }
 #side-bar a:hover{
     color: black;
-}
-
-#context{
-
 }
 footer{
     text-align:center;
@@ -105,7 +111,7 @@ footer img{
         display:none;
     }
     #main{
-        grid-template-columns: minmax(auto, 200px) auto;
+        grid-template-columns: minmax(auto, 100px) auto;
     }
     #quick-find{
         width:max-content;
