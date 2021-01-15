@@ -37,14 +37,16 @@ header{
 #links-wrapper{
     display:flex;
     flex-direction: row;
-
+    align-items: center;
 }
 #links-wrapper div{
-    margin-top: auto;
-    margin-bottom: auto;
+
     fleX:1 1 auto;
 }
+/*
 
+
+*/
 #main{
     margin:0;
     width: 100%;
