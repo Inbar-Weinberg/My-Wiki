@@ -21,7 +21,8 @@ header{
     display:grid;
     grid-template-columns: 150px auto;
     grid-auto-rows:150px;
-    background-color: rgba(101,157,189,1);
+    background: rgb(141,135,65);
+    background: linear-gradient(180deg, rgba(141,135,65,0.9332107843137255) 2%, rgba(101,157,189,1) 47%);
     z-index: 1;
 }
 
@@ -42,10 +43,6 @@ header{
     margin:auto 0;
     fleX:1 1 0;
 }
-/*
-
-
-*/
 #main{
     margin:0;
     width: 100%;
@@ -91,3 +88,31 @@ footer img{
     height:26px;
 }
 
+@media only screen and (max-width: 600px) {
+    header{
+        grid-template-columns:auto;
+    }
+    #logo{
+        display:none;
+    }
+    #links-wrapper{
+        flex-wrap: wrap;
+    }
+    #links-wrapper div {
+        fleX:0 0 33%;
+    }
+    #empty-div{
+        display:none;
+    }
+    #main{
+        grid-template-columns: minmax(auto, 200px) auto;
+    }
+    #quick-find{
+        width:max-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer{
+        grid-column: 1/3;
+    }
+}
