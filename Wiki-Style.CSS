@@ -12,7 +12,6 @@ body{
     background-attachment: fixed;
 }
 
-
 header{
     position:fixed;
     top:0;
@@ -24,18 +23,6 @@ header{
     grid-auto-rows:150px;
     background-color: rgba(101,157,189,1);
     z-index: 1;
-
-}
-main{
-    margin:0;
-    width: 100%;
-    position:absolute;
-    top:150px;
-    display:grid;
-    grid-template-columns: minmax(auto, 200px)  auto minmax(auto, 200px);
-    grid-auto-rows:minmax(75vh, auto);
-    justify-content: stretch;
-
 }
 
 #logo-pic{
@@ -43,16 +30,36 @@ main{
     width: 150px;
     border-radius: 50%;
 }
-#nav-bar{
+
+
+#main{
+    margin:0;
+    width: 100%;
+    position:absolute;
+    top:150px;
+    display:grid;
+    grid-template-columns: minmax(auto, 200px)  auto minmax(auto, 200px);
+    grid-auto-rows: minmax(75vh, auto) auto;
 }
-#side-bar{
+#quick-find{
+    text-align:center;
 }
+#side-bar a{
+    color:darkblue;
+    text-decoration: none;
+}
+#side-bar a:hover{
+    color: black;
+}
+
+
 #context{
     padding-right: 5%;;
     padding-left:5%;
 }
-#footer{
-    bottom: ;
+footer{
+    grid-column: 2/3;
+
     /*
     position: relative;
     top:100%;
