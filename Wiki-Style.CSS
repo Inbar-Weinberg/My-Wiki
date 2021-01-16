@@ -29,7 +29,7 @@ header{
     border-radius: 50%;
     transform:scale(0.70);
 }
-#nav-bar div{
+nav div{
     height:50%;
     text-align: center;
 }
@@ -64,11 +64,24 @@ header{
 #quick-find{
     text-align:center;
 }
-#side-bar a{
+#quick-find-menu{
+    padding:0;
+    text-align:center;
+    list-style-type:none;
+}
+aside{
+    position:fixed;
+    left:35px;
+
+}
+#context{
+    grid-column: 2/3
+}
+aside a{
     color:darkblue;
     text-decoration: none;
 }
-#side-bar a:hover{
+aside a:hover{
     color: black;
 }
 footer{
@@ -116,6 +129,7 @@ footer img{
         margin-left: auto;
         margin-right: auto;
     }
+    
     footer{
         grid-column: 1/3;
     }
