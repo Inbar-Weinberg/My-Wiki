@@ -12,6 +12,10 @@ body{
     background-attachment: fixed;
 }
 
+.active{
+    color:red !important;
+}
+
 /***************/
 header{
     position:fixed;
@@ -51,9 +55,6 @@ nav div{
 }
 #links-wrapper a:hover{
     color:black;
-}
-#links-wrapper .active{
-    color:red;
 }
 
 /***************/
@@ -112,25 +113,26 @@ footer img{
     height:26px;
 }
 /***************/
-#stats{
+table{
     text-align:center;
     width: 100%;
     height: 40%;
     border-spacing: 0;
-    font-size: 20px;
+    font-size: 20px; 
 }
-#stats caption{
+
+caption{
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 3%;
 }
-#stats tr:nth-child(odd){
+tr:nth-child(odd){
     background-color: hsl(192, 10%, 38%);
 }
-#stats tr:nth-child(even){
+tr:nth-child(even){
     background-color: hsl(192, 7%, 50%);
 }
-#stats th{
+th{
     background-color: hsl(192, 15%, 23%);
 }
 
@@ -139,6 +141,20 @@ tbody :nth-child(12){
     padding:0;
     width:7%;
 }
+#stats-2{
+    margin-top: 20px;
+    display:none;
+}
+#stats-2:target{
+    margin-top: 20px;
+    display:table;
+}
+
+
+
+
+
+
 
 
 
