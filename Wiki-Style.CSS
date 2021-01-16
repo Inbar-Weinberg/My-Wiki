@@ -11,6 +11,8 @@ body{
     background: linear-gradient(0deg, rgba(141,135,65,0.9332107843137255) 2%, rgba(101,157,189,1) 47%);
     background-attachment: fixed;
 }
+
+/***************/
 header{
     position:fixed;
     top:0;
@@ -54,6 +56,7 @@ nav div{
     color:red;
 }
 
+/***************/
 #main{
     margin:0;
     width: 100%;
@@ -108,7 +111,38 @@ footer a{
 footer img{
     height:26px;
 }
+/***************/
+#stats{
+    text-align:center;
+    width: 100%;
+    height: 40%;
+    border-spacing: 0;
+    font-size: 20px;
+}
+#stats caption{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 3%;
+}
+#stats tr:nth-child(odd){
+    background-color: hsl(192, 10%, 38%);
+}
+#stats tr:nth-child(even){
+    background-color: hsl(192, 7%, 50%);
+}
+#stats th{
+    background-color: hsl(192, 15%, 23%);
+}
 
+tbody :nth-child(12){
+    background-color: hsl(0, 0%, 53%);
+    padding:0;
+    width:7%;
+}
+
+
+
+/***************/
 @media only screen and (max-width: 600px) {
     header{
         grid-template-columns:auto;
